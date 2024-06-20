@@ -14,6 +14,7 @@ def pesquisa_binaria(lista, item):
     while baixo <= alto:
         meio = (baixo + alto) // 2
         chute = lista[meio]
+        print(chute)
         if chute == item:
             return {"iterações": contador, "indice": meio}
         if chute > item:
@@ -23,6 +24,6 @@ def pesquisa_binaria(lista, item):
         contador = contador + 1
     return None
 
-minha_lista = gerar_lista_ordenada(256)
+minha_lista = gerar_lista_ordenada(100)
 print (len(minha_lista))
-print (pesquisa_binaria(minha_lista, 256))
+print (pesquisa_binaria(minha_lista, 88))
